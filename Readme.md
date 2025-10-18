@@ -1,17 +1,17 @@
 # Statistical and Machine Learning Labs
 
-This repository contains a collection of experiments and code implementations, that explore fundamental concepts in both **Statistical Learning** and **Machine Learning**.  
+This repository contains a collection of experiments and code implementations created during my **Statistical Learning** course, exploring fundamental concepts in both **Statistical Learning** and **Machine Learning**.  
 Each folder demonstrates a key idea through practical coding exercises and data-driven analysis.
 
 ---
 
 ## 📚 Table of Contents
 
-1. [Bias-Variance Tradeoff](#polynomial_regression_experiment)
+1. [Bias-Variance Tradeoff](#bias-variance-tradeoff)
 
 ---
 
-## Folder: `polynomial_regression_experiment`
+## Folder: `bias_variance_tradeoff`
 
 ### 📁 Description
 This experiment demonstrates the **bias-variance tradeoff** in polynomial regression using synthetic data generated from a sine function.  
