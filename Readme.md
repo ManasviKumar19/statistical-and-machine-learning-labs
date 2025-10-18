@@ -7,7 +7,7 @@ Each folder demonstrates a key idea through practical coding exercises and data-
 
 ## 📚 Table of Contents
 
-1. [Bias-Variance Tradeoff](#bias-variance-tradeoff)
+1. [Bias-Variance Tradeoff](#polynomial_regression_experiment)
 
 ---
 
