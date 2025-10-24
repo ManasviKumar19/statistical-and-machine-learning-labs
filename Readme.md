@@ -10,6 +10,7 @@ Each folder demonstrates a key idea through practical coding exercises and data-
 1. [Bias-Variance Tradeoff](#polynomial_regression_experiment)
 2. [LDA vs QDA Comparison](#lda_qda_comparison)
 3. [LDA vs Logistic Regression](#lda_logistic_comparison)
+4. [Breast Cancer Classification](#knn_rf_svm_comparison)
 
 ---
 
@@ -86,6 +87,28 @@ It explores how **training sample size** impacts classification accuracy and mod
 
 ### ⚙️ Requirements
 This notebook uses standard Python libraries. Install dependencies using:
-```bash pip install numpy pandas scikit-learn
+```bash pip install numpy pandas scikit-learn```
 
+## Folder: `knn_rf_svm_comparison`
 
+### 📁 Description
+This experiment applies and compares three classification algorithms — **K-Nearest Neighbors (KNN)**, **Random Forest**, and **Support Vector Machine (SVM)** — on a **breast cancer diagnosis dataset**.  
+The goal is to evaluate model performance using **cross-validation**, and assess accuracy, sensitivity, and specificity on test data.
+
+### ⚙️ File(s)
+- `Source_Code.ipynb` — loads the dataset, preprocesses features, trains and evaluates three classifiers, and reports key performance metrics.
+
+### ▶️ How to Run
+1. Place the dataset file (`data.csv`) in the specified directory or update the path in the notebook.  
+2. Open the notebook in Jupyter or VS Code.  
+3. Run all cells sequentially.  
+4. Observe printed model performances, mean cross-validation accuracies, and confusion matrix–based metrics (sensitivity and specificity).
+
+### 🧠 Key Concepts / Techniques
+- Supervised Classification  
+- K-Nearest Neighbors (KNN)  
+- Random Forest Classifier  
+- Support Vector Machine (SVM)  
+- Cross-Validation Accuracy  
+- Sensitivity and Specificity  
+- Model Comparison  
