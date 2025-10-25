@@ -11,6 +11,7 @@ Each folder demonstrates a key idea through practical coding exercises and data-
 2. [LDA vs QDA Comparison](#lda_qda_comparison)
 3. [LDA vs Logistic Regression](#lda_logistic_comparison)
 4. [Breast Cancer Classification](#knn_rf_svm_comparison)
+5. [Regularized Regression Masq](#lasso_ridge_elasticnet_comparison)
 
 ---
 
@@ -112,3 +113,37 @@ The goal is to evaluate model performance using **cross-validation**, and assess
 - Cross-Validation Accuracy  
 - Sensitivity and Specificity  
 - Model Comparison  
+
+---
+
+## Folder: `lasso_ridge_elasticnet_comparison`
+
+### 📁 Description
+This experiment applies three regularized regression models — **Lasso**, **Ridge**, and **Elastic Net** — to predict depression diagnosis (`D_DEPDYS`) based on psychological questionnaire data (MASQ features).  
+It focuses on **feature selection**, **multicollinearity handling**, and **model comparison** using cross-validation and test accuracy.
+
+### ⚙️ File(s)
+- `Source_Code.ipynb` — loads and cleans MASQ training and test datasets, performs feature scaling, fits regularized regression models with cross-validation, and evaluates predictive performance.
+
+### ▶️ How to Run
+1. Ensure that the training and test data files (`masq_train.feather` and `masq_test.feather`) are placed in the specified paths or update their locations in the notebook.  
+2. Open the notebook in Jupyter or VS Code.  
+3. Run all cells sequentially.  
+4. Review printed outputs for:
+   - Cross-validated best hyperparameters  
+   - Test set accuracy for each model  
+   - Feature coefficients for Lasso, Ridge, and Elastic Net
+
+### 🧠 Key Concepts / Techniques
+- Lasso Regression  
+- Ridge Regression  
+- Elastic Net Regularization  
+- Cross-Validation (Grid Search)  
+- Feature Scaling (Standardization)  
+- Handling Multicollinearity  
+- Model Comparison  
+
+### ⚙️ Requirements
+This notebook uses standard Python libraries. Install dependencies using:
+```bash
+pip install numpy pandas scikit-learn pyarrow
