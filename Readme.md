@@ -12,6 +12,7 @@ Each folder demonstrates a key idea through practical coding exercises and data-
 3. [LDA vs Logistic Regression](#lda_logistic_comparison)
 4. [Breast Cancer Classification](#knn_rf_svm_comparison)
 5. [Regularized Regression Masq](#lasso_ridge_elasticnet_comparison)
+6. [Factor Clustering Methods](#clustering_analysis)
 
 ---
 
@@ -143,7 +144,33 @@ It focuses on **feature selection**, **multicollinearity handling**, and **model
 - Handling Multicollinearity  
 - Model Comparison  
 
-### ⚙️ Requirements
-This notebook uses standard Python libraries. Install dependencies using:
-```bash
-pip install numpy pandas scikit-learn pyarrow
+---
+
+## Folder: `clustering_analysis`
+### 📁 Description
+
+This experiment explores Principal Component Analysis (PCA), Varimax rotation, and multiple clustering techniques on an alexithymia-related dataset to identify underlying psychological dimensions and cluster patterns.
+The analysis demonstrates how dimensionality reduction and unsupervised learning can reveal structure in multivariate data.
+
+### ⚙️ File(s)
+
+`Source_Code.ipynb` — performs PCA with Varimax rotation, applies K-Means and Hierarchical Clustering, and visualizes results through scree plots, component matrices, and dendrograms.
+
+### ▶️ How to Run
+
+Ensure the dataset data_alexithymia_csv.csv is available in the same directory.
+
+Open the notebook in Jupyter or VS Code.
+
+Run all cells sequentially to generate visualizations and clustering outputs.
+
+### 🧠 Key Concepts / Techniques
+
+Principal Component Analysis (PCA)
+
+- Varimax Rotation
+- K-Means Clustering
+- Hierarchical Clustering
+- Dimensionality Reduction
+- Scree Plot Analysis
+- Dendrogram Visualization
