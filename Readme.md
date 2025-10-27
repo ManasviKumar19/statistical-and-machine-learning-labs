@@ -13,6 +13,7 @@ Each folder demonstrates a key idea through practical coding exercises and data-
 4. [Breast Cancer Classification](#knn_rf_svm_comparison)
 5. [Regularized Regression Masq](#lasso_ridge_elasticnet_comparison)
 6. [Factor Clustering Methods](#clustering_analysis)
+7. [Partial Least Squares regression](#psychometric_pls_analysis)
 
 ---
 
@@ -174,3 +175,31 @@ Principal Component Analysis (PCA)
 - Dimensionality Reduction
 - Scree Plot Analysis
 - Dendrogram Visualization
+
+---
+
+## Folder: `psychometric_pls_analysis`
+
+### 📁 Description
+This experiment applies **Partial Least Squares (PLS) Regression** to an alexithymia dataset to explore relationships between psychological variables and outcome measures.  
+It demonstrates how dimensionality reduction and regression can be combined to handle multicollinearity in high-dimensional data.
+
+### ⚙️ File(s)
+- `Source_Code.ipynb` — performs data loading, PLS regression model training and evaluation, and visualizes performance metrics such as Mean Squared Error (MSE).
+
+### ▶️ How to Run
+1. Ensure the dataset file `data_alexithymia_csv.csv` is available in the same directory.  
+2. Open the notebook in Jupyter or VS Code.  
+3. Run all cells to reproduce model training and output visualizations.
+
+### 🧠 Key Concepts / Techniques
+- Partial Least Squares (PLS) Regression  
+- Dimensionality Reduction  
+- Train-Test Split  
+- Model Evaluation using Mean Squared Error (MSE)  
+- Multicollinearity Handling  
+- Component-based Modeling  
+
+### ⚙️ Requirements
+This notebook uses standard Python libraries. Install dependencies using:
+pip install pandas scikit-learn matplotlib factor_analyzer scipy
