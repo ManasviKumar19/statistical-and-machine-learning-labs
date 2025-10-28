@@ -14,6 +14,7 @@ Each folder demonstrates a key idea through practical coding exercises and data-
 5. [Regularized Regression Masq](#lasso_ridge_elasticnet_comparison)
 6. [Factor Clustering Methods](#clustering_analysis)
 7. [Partial Least Squares regression](#psychometric_pls_analysis)
+8. [Generalized Additive Models](#bike_sharing_gam_analysis)
 
 ---
 
@@ -203,3 +204,29 @@ It demonstrates how dimensionality reduction and regression can be combined to h
 ### ⚙️ Requirements
 This notebook uses standard Python libraries. Install dependencies using:
 pip install pandas scikit-learn matplotlib factor_analyzer scipy
+
+---
+
+## Folder: `bike_sharing_gam_analysis`
+
+### 📁 Description
+This experiment fits a Generalized Additive Model (GAM) to a bike demand dataset to analyze how temperature, precipitation, and seasonal trends influence bike rental counts.  
+It demonstrates the flexibility of GAMs in modeling nonlinear relationships between predictors and the target variable.
+
+### ⚙️ File(s)
+- `Source_Code.ipynb` — fits a GAM using the mgcv package in R, visualizes smooth terms, and evaluates model performance using Mean Squared Error (MSE).
+
+### ▶️ How to Run
+1. Ensure the dataset file `bike_dat.Rdata` is available in the same directory.  
+2. Open the notebook in Jupyter with an R kernel (or RStudio).  
+3. Run all cells to train the GAM model, generate plots, and compute MSE.
+
+### 🧠 Key Concepts / Techniques
+- Generalized Additive Models (GAM)  
+- Spline Smoothing  
+- Model Evaluation using Mean Squared Error (MSE)  
+- Temperature and Weather Effects on Demand  
+- Seasonal Trend Modeling  
+
+### ⚙️ Requirements
+This notebook uses R
