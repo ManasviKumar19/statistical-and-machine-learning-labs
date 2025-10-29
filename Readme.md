@@ -15,6 +15,7 @@ Each folder demonstrates a key idea through practical coding exercises and data-
 6. [Factor Clustering Methods](#clustering_analysis)
 7. [Partial Least Squares regression](#psychometric_pls_analysis)
 8. [Generalized Additive Models](#bike_sharing_gam_analysis)
+9. [Quantitative Structure-Activity Relationship](#qsar_ensemble_models)
 
 ---
 
@@ -230,3 +231,40 @@ It demonstrates the flexibility of GAMs in modeling nonlinear relationships betw
 
 ### ⚙️ Requirements
 This notebook uses R
+
+---
+## Folder: `qsar_ensemble_models`
+
+### 📁 Description
+This notebook focuses on **QSAR (Quantitative Structure-Activity Relationship)** modeling using ensemble learning methods — Gradient Boosting Machines (GBM), Random Forests, Bagging, and Decision Trees — to classify compounds based on molecular descriptors.  
+The workflow demonstrates model training, hyperparameter tuning, and evaluation using Brier Scores and Misclassification Rates.
+
+### ⚙️ File(s)
+- `Source_Code.py` — implements QSAR modeling with various ensemble methods, compares performance metrics, and discusses parameter effects (shrinkage, n.trees, interaction.depth).
+
+### ▶️ How to Run
+1. Ensure the dataset file `qsar.Rda` is in the same directory.  
+2. Open the notebook in **Jupyter with R kernel** (or RStudio).  
+3. Run all cells sequentially to:
+   - Load the QSAR dataset.  
+   - Train GBM and other ensemble models.  
+   - Compare models via performance metrics (Brier Score, Misclassification Rate).  
+
+### 🧠 Key Concepts / Techniques
+- Ensemble Learning (Bagging, Random Forests, Boosting)  
+- Gradient Boosting Machine (GBM) Tuning  
+- Hyperparameter Effects:  
+  - **Shrinkage:** controls learning rate — smaller values improve generalization but need more trees.  
+  - **n.trees:** number of boosting iterations — more trees can enhance performance but risk overfitting.  
+  - **interaction.depth:** captures variable interactions — higher depth models complex patterns.  
+- Brier Score & Misclassification Rate  
+- Model Comparison and Evaluation  
+
+### ⚙️ Requirements
+Install the following R packages before running:
+install.packages(c("caret", "randomForest", "gbm", "mgcv"))
+
+### 💡 Insights
+- Lower **shrinkage** generally improves accuracy but increases computation.  
+- Higher **interaction.depth** suggests presence of nonlinear interactions in the QSAR dataset.  
+- **GBM** models can outperform single tree or bagged models when properly tuned.  
