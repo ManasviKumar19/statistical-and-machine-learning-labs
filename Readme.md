@@ -16,6 +16,7 @@ Each folder demonstrates a key idea through practical coding exercises and data-
 7. [Partial Least Squares regression](#psychometric_pls_analysis)
 8. [Generalized Additive Models](#bike_sharing_gam_analysis)
 9. [Quantitative Structure-Activity Relationship](#qsar_ensemble_models)
+10. [Svm Kernel Comparison](#svr_boston_housing)
 
 ---
 
@@ -268,3 +269,40 @@ install.packages(c("caret", "randomForest", "gbm", "mgcv"))
 - Lower **shrinkage** generally improves accuracy but increases computation.  
 - Higher **interaction.depth** suggests presence of nonlinear interactions in the QSAR dataset.  
 - **GBM** models can outperform single tree or bagged models when properly tuned.  
+
+
+---
+
+## Folder: `svr_boston_housing`
+
+### 📁 Description
+This notebook applies **Support Vector Regression (SVR)** to the Boston Housing dataset to predict median house prices (`medv`).  
+It performs hyperparameter tuning for both **linear** and **radial basis function (RBF)** kernels and compares their predictive performance.
+
+### ⚙️ File(s)
+- `Source_Code.ipynb` — trains SVR models, tunes hyperparameters (cost, epsilon, gamma), visualizes error trends, and evaluates predictions using MSE & MAE.
+
+### ▶️ How to Run
+1. Ensure the Boston dataset is accessible via `library(MASS)`.
+2. Open the notebook in **Jupyter with R kernel** or **RStudio**.
+3. Run all cells to:
+   - Split the dataset into train/test sets
+   - Tune hyperparameters for linear & RBF SVR
+   - Train final SVR models and evaluate performance
+
+### 🧠 Key Concepts / Techniques
+- Support Vector Regression (SVR)  
+- Hyperparameter Tuning (cost, epsilon, gamma)  
+- Kernel Methods: Linear vs Radial Basis Function (RBF)  
+- Model Evaluation using Mean Squared Error (MSE) & Mean Absolute Error (MAE)  
+- Model Comparison & Visualization of Tuning Performance
+
+### 🔍 Key Insights
+- **Epsilon** controls the tolerance margin — lower values yield more precise fitting but increase sensitivity.
+- **Cost (C)** controls complexity — higher values reduce bias but risk overfitting.
+- **Gamma** (for RBF kernel) influences model flexibility — high values can overfit.
+- RBF SVR may outperform linear SVR when nonlinear relationships exist.
+
+### ⚙️ Requirements
+Install required R packages:
+install.packages(c("e1071", "MASS", "ggplot2"))
